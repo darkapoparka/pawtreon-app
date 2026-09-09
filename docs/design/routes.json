@@ -1,0 +1,2264 @@
+{
+  "version": "0.1.0",
+  "status": "wireframe-contract-not-production",
+  "localeNote": "Product paths omit /bg or /en prefix. Overlays are not pages.",
+  "routes": [
+    {
+      "id": "home",
+      "path": "/",
+      "title": "Cases near you",
+      "kind": "home",
+      "group": "Discovery",
+      "access": "public",
+      "sections": [
+        "Compact wordmark / Varna selector / account",
+        "Search and species filters",
+        "Winter-shelter campaign banner",
+        "Sort and map control",
+        "Animal-led two-column case cards"
+      ],
+      "actions": [
+        {
+          "label": "Open a case",
+          "to": "case"
+        },
+        {
+          "label": "Support winter homes",
+          "to": "campaign"
+        },
+        {
+          "label": "View map",
+          "to": "map"
+        }
+      ],
+      "fields": [],
+      "back": "home",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "campaigns",
+      "path": "/campaigns",
+      "title": "Community campaigns",
+      "kind": "catalog",
+      "group": "Discovery",
+      "access": "public",
+      "sections": [
+        "Search campaigns",
+        "Need and location filters",
+        "Featured winter initiative",
+        "Campaign cards with organizer, goal and status"
+      ],
+      "actions": [
+        {
+          "label": "Open campaign",
+          "to": "campaign"
+        },
+        {
+          "label": "Create a campaign",
+          "to": "create"
+        }
+      ],
+      "fields": [],
+      "back": "home",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "search",
+      "path": "/search",
+      "title": "Search results",
+      "kind": "search",
+      "group": "Discovery",
+      "access": "public",
+      "sections": [
+        "Query field with clear action",
+        "Shared species and advanced filter state",
+        "Result count and sort",
+        "Cases and campaigns distinguished in results"
+      ],
+      "actions": [
+        {
+          "label": "Open result",
+          "to": "case"
+        },
+        {
+          "label": "Adjust filters",
+          "to": "filters"
+        },
+        {
+          "label": "Map results",
+          "to": "map"
+        }
+      ],
+      "fields": [
+        [
+          "Search",
+          "search",
+          "winter shelters"
+        ]
+      ],
+      "back": "home",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "map",
+      "path": "/map",
+      "title": "Help in your area",
+      "kind": "map",
+      "group": "Discovery",
+      "access": "public",
+      "sections": [
+        "Manual city selection; permission only on request",
+        "Coarse-area map and cluster pins",
+        "Selected case preview sheet",
+        "List/map switch with filters retained"
+      ],
+      "actions": [
+        {
+          "label": "Open selected case",
+          "to": "case"
+        },
+        {
+          "label": "Back to list",
+          "to": "home"
+        },
+        {
+          "label": "Choose city",
+          "to": "location"
+        }
+      ],
+      "fields": [],
+      "back": "home",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "location-denied"
+      ]
+    },
+    {
+      "id": "case",
+      "path": "/cases/[slug]",
+      "title": "Help Misho recover",
+      "kind": "case",
+      "group": "Stories",
+      "access": "public",
+      "sections": [
+        "Animal gallery; status and need",
+        "Named personal organizer and coarse area",
+        "Raised / target if financial",
+        "Story, budget and evidence summary",
+        "Latest update; report link"
+      ],
+      "actions": [
+        {
+          "label": "Donate",
+          "to": "donate"
+        },
+        {
+          "label": "Help another way",
+          "to": "offer-help"
+        },
+        {
+          "label": "Read updates",
+          "to": "case-updates"
+        },
+        {
+          "label": "Organizer profile",
+          "to": "person"
+        },
+        {
+          "label": "Share",
+          "to": "share"
+        },
+        {
+          "label": "Report concern",
+          "to": "report"
+        }
+      ],
+      "fields": [],
+      "back": "home",
+      "states": [
+        "default",
+        "loading",
+        "error",
+        "offline",
+        "not-found",
+        "paused",
+        "resolved",
+        "funding-unavailable"
+      ]
+    },
+    {
+      "id": "campaign",
+      "path": "/campaigns/[slug]",
+      "title": "Winter homes for street cats",
+      "kind": "campaign",
+      "group": "Stories",
+      "access": "public",
+      "sections": [
+        "Immersive cat photograph and editorial headline",
+        "White sheet: organizer and campaign purpose",
+        "Funding progress and itemized shelter budget",
+        "Related cases and dated evidence-backed updates",
+        "Optional approved coarse-area map"
+      ],
+      "actions": [
+        {
+          "label": "Support campaign",
+          "to": "donate"
+        },
+        {
+          "label": "See updates",
+          "to": "campaign-updates"
+        },
+        {
+          "label": "Organization profile",
+          "to": "organization"
+        },
+        {
+          "label": "Share",
+          "to": "share"
+        },
+        {
+          "label": "Report concern",
+          "to": "report"
+        }
+      ],
+      "fields": [],
+      "back": "campaigns",
+      "states": [
+        "default",
+        "loading",
+        "error",
+        "offline",
+        "not-found",
+        "paused",
+        "completed",
+        "funding-unavailable"
+      ]
+    },
+    {
+      "id": "case-updates",
+      "path": "/cases/[slug]/updates",
+      "title": "Misho’s progress",
+      "kind": "updates",
+      "group": "Stories",
+      "access": "public",
+      "sections": [
+        "Dated animal-care timeline",
+        "Responsible author for each update",
+        "Treatment progress and redacted spend evidence",
+        "Resolved outcome shown without ongoing urgency"
+      ],
+      "actions": [
+        {
+          "label": "Back to case",
+          "to": "case"
+        },
+        {
+          "label": "Follow updates",
+          "to": "sign-in"
+        }
+      ],
+      "fields": [],
+      "back": "case",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "campaign-updates",
+      "path": "/campaigns/[slug]/updates",
+      "title": "Shelters taking shape",
+      "kind": "updates",
+      "group": "Stories",
+      "access": "public",
+      "sections": [
+        "Construction and installation timeline",
+        "Photos with dates and organizer attribution",
+        "Materials spend and remaining work",
+        "Budget changes explained transparently"
+      ],
+      "actions": [
+        {
+          "label": "Back to campaign",
+          "to": "campaign"
+        },
+        {
+          "label": "Follow campaign",
+          "to": "sign-in"
+        }
+      ],
+      "fields": [],
+      "back": "campaign",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "person",
+      "path": "/people/[handle]",
+      "title": "Personal organizer",
+      "kind": "profile",
+      "group": "Stories",
+      "access": "public",
+      "sections": [
+        "Avatar, name and approximate service area",
+        "Personal organizer label; accurate verification scope",
+        "Active cases and campaigns",
+        "Past outcomes and public updates"
+      ],
+      "actions": [
+        {
+          "label": "View case",
+          "to": "case"
+        },
+        {
+          "label": "View campaign",
+          "to": "campaign"
+        },
+        {
+          "label": "Report profile",
+          "to": "report"
+        }
+      ],
+      "fields": [],
+      "back": "case",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "organization",
+      "path": "/organizations/[slug]",
+      "title": "Organization profile",
+      "kind": "profile",
+      "group": "Stories",
+      "access": "public",
+      "sections": [
+        "Logo, clinic/store/organization type",
+        "Published contact details and intentional business location",
+        "Named responsible team and verification scope",
+        "Cases, campaigns and outcome updates"
+      ],
+      "actions": [
+        {
+          "label": "View campaign",
+          "to": "campaign"
+        },
+        {
+          "label": "View case",
+          "to": "case"
+        },
+        {
+          "label": "Report profile",
+          "to": "report"
+        }
+      ],
+      "fields": [],
+      "back": "campaign",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "offer-help",
+      "path": "/cases/[slug]/help",
+      "title": "Offer practical help",
+      "kind": "form",
+      "group": "Donations",
+      "access": "signed-in",
+      "sections": [
+        "Choose food, materials, transport or foster help",
+        "Describe availability and approximate area",
+        "Private contact-consent statement",
+        "Sent request is not an accepted placement"
+      ],
+      "actions": [
+        {
+          "label": "Send help offer (prototype)",
+          "to": "help-sent"
+        },
+        {
+          "label": "Back to case",
+          "to": "case"
+        }
+      ],
+      "fields": [
+        [
+          "Help type",
+          "select",
+          "Food|Shelter materials|Transport|Foster care"
+        ],
+        [
+          "What can you offer?",
+          "textarea",
+          ""
+        ],
+        [
+          "Contact email",
+          "email",
+          ""
+        ],
+        [
+          "Share my contact with the organizer",
+          "checkbox",
+          ""
+        ]
+      ],
+      "back": "case",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "help-sent",
+      "path": "/cases/[slug]/help/status",
+      "title": "Your help offer",
+      "kind": "status",
+      "group": "Donations",
+      "access": "signed-in",
+      "sections": [
+        "Request status: submitted, seen, accepted or declined",
+        "Organizer response expectations",
+        "Cancel request / contact support",
+        "No location or contact details publicly exposed"
+      ],
+      "actions": [
+        {
+          "label": "Return to case",
+          "to": "case"
+        },
+        {
+          "label": "View notifications",
+          "to": "notifications"
+        }
+      ],
+      "fields": [],
+      "back": "case",
+      "states": [
+        "default",
+        "loading",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "donate",
+      "path": "/donate/[fundraiserId]",
+      "title": "Choose your contribution",
+      "kind": "donate",
+      "group": "Donations",
+      "access": "public; provider eligibility gate",
+      "sections": [
+        "Recipient and supported case/campaign",
+        "Suggested amounts plus custom amount",
+        "Transparent total and fees; no prechecked tip",
+        "Receipt email and public-name privacy",
+        "Provider-hosted payment handoff; no card fields in prototype"
+      ],
+      "actions": [
+        {
+          "label": "Preview payment status",
+          "to": "donation-status"
+        },
+        {
+          "label": "Return to fundraiser",
+          "to": "campaign"
+        }
+      ],
+      "fields": [
+        [
+          "Amount in EUR",
+          "number",
+          "20"
+        ],
+        [
+          "Receipt email",
+          "email",
+          ""
+        ],
+        [
+          "Keep my name private",
+          "checkbox",
+          ""
+        ]
+      ],
+      "back": "campaign",
+      "states": [
+        "default",
+        "loading",
+        "error",
+        "offline",
+        "funding-unavailable",
+        "invalid-amount",
+        "goal-reached"
+      ]
+    },
+    {
+      "id": "donation-status",
+      "path": "/donations/[donationId]/status",
+      "title": "Donation status",
+      "kind": "status",
+      "group": "Donations",
+      "access": "owner or expiring guest token",
+      "sections": [
+        "Pending while server verifies the payment",
+        "Confirmed outcome only from trusted provider event",
+        "Failure/retry without creating duplicate charges",
+        "Receipt and return links after success"
+      ],
+      "actions": [
+        {
+          "label": "Preview receipt",
+          "to": "receipt"
+        },
+        {
+          "label": "Return to campaign",
+          "to": "campaign"
+        },
+        {
+          "label": "Try another amount",
+          "to": "donate"
+        }
+      ],
+      "fields": [],
+      "back": "donate",
+      "states": [
+        "pending",
+        "succeeded",
+        "failed",
+        "canceled",
+        "offline",
+        "not-found",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "receipt",
+      "path": "/donations/[donationId]/receipt",
+      "title": "Contribution receipt",
+      "kind": "receipt",
+      "group": "Donations",
+      "access": "owner or expiring guest token",
+      "sections": [
+        "Recipient and case/campaign reference",
+        "Amount/currency, fee treatment and date",
+        "Provider transaction reference, no card secrets",
+        "Receipt is not automatically a tax-deductibility certificate"
+      ],
+      "actions": [
+        {
+          "label": "View donation history",
+          "to": "donations"
+        },
+        {
+          "label": "Contact support",
+          "to": "support"
+        },
+        {
+          "label": "Return to campaign",
+          "to": "campaign"
+        }
+      ],
+      "fields": [],
+      "back": "donation-status",
+      "states": [
+        "default",
+        "loading",
+        "error",
+        "permission-denied",
+        "not-found"
+      ]
+    },
+    {
+      "id": "sign-in",
+      "path": "/sign-in",
+      "title": "Welcome back",
+      "kind": "auth",
+      "group": "Identity",
+      "access": "public",
+      "sections": [
+        "Email-link sign-in",
+        "Optional supported social login after setup",
+        "Return-to-route preserved",
+        "No simulated authenticated production session"
+      ],
+      "actions": [
+        {
+          "label": "Preview email step",
+          "to": "check-email"
+        },
+        {
+          "label": "Create an account",
+          "to": "sign-up"
+        }
+      ],
+      "fields": [
+        [
+          "Email address",
+          "email",
+          ""
+        ]
+      ],
+      "back": "home",
+      "states": [
+        "default",
+        "submitting",
+        "invalid-email",
+        "rate-limited",
+        "error",
+        "offline"
+      ]
+    },
+    {
+      "id": "sign-up",
+      "path": "/sign-up",
+      "title": "Join Pawtreon",
+      "kind": "auth",
+      "group": "Identity",
+      "access": "public",
+      "sections": [
+        "Name and email",
+        "Terms/privacy acknowledgement separate from marketing",
+        "One human account; organizations added after sign-in",
+        "No mandatory donation to register"
+      ],
+      "actions": [
+        {
+          "label": "Preview email step",
+          "to": "check-email"
+        },
+        {
+          "label": "Already have an account",
+          "to": "sign-in"
+        }
+      ],
+      "fields": [
+        [
+          "Your name",
+          "text",
+          ""
+        ],
+        [
+          "Email address",
+          "email",
+          ""
+        ],
+        [
+          "I agree to the terms and privacy notice",
+          "checkbox",
+          ""
+        ]
+      ],
+      "back": "home",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "check-email",
+      "path": "/auth/check-email",
+      "title": "Check your email",
+      "kind": "status",
+      "group": "Identity",
+      "access": "public",
+      "sections": [
+        "Email-link instructions",
+        "Resend cooldown and change-email option",
+        "Expired-link recovery",
+        "No account enumeration through errors"
+      ],
+      "actions": [
+        {
+          "label": "Preview verified onboarding",
+          "to": "onboarding"
+        },
+        {
+          "label": "Change email",
+          "to": "sign-in"
+        }
+      ],
+      "fields": [],
+      "back": "sign-in",
+      "states": [
+        "default",
+        "resending",
+        "expired",
+        "rate-limited",
+        "error",
+        "offline"
+      ]
+    },
+    {
+      "id": "auth-error",
+      "path": "/auth/error",
+      "title": "This sign-in link expired",
+      "kind": "status",
+      "group": "Identity",
+      "access": "public",
+      "sections": [
+        "Clear recovery without leaking account status",
+        "Request a fresh link",
+        "Restore intended destination after valid login"
+      ],
+      "actions": [
+        {
+          "label": "Request another link",
+          "to": "sign-in"
+        },
+        {
+          "label": "Browse cases",
+          "to": "home"
+        }
+      ],
+      "fields": [],
+      "back": "sign-in",
+      "states": [
+        "expired",
+        "invalid-link",
+        "error",
+        "offline"
+      ]
+    },
+    {
+      "id": "onboarding",
+      "path": "/onboarding",
+      "title": "How will you help?",
+      "kind": "form",
+      "group": "Identity",
+      "access": "signed-in",
+      "sections": [
+        "Personal profile basics",
+        "Default city and language",
+        "Optional create/join organization next",
+        "Skip organization setup; no fundraising claim yet"
+      ],
+      "actions": [
+        {
+          "label": "Continue to account",
+          "to": "account"
+        },
+        {
+          "label": "Set up an organization",
+          "to": "organization-new"
+        }
+      ],
+      "fields": [
+        [
+          "Display name",
+          "text",
+          ""
+        ],
+        [
+          "City",
+          "select",
+          "Varna|Sofia|Plovdiv|Other"
+        ],
+        [
+          "Language",
+          "select",
+          "Bulgarian|English"
+        ]
+      ],
+      "back": "home",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "organization-new",
+      "path": "/organizations/new",
+      "title": "Create your organization",
+      "kind": "form",
+      "group": "Identity",
+      "access": "signed-in",
+      "sections": [
+        "Clinic / store / organization entity type",
+        "Public name and service area",
+        "Authority-to-represent declaration",
+        "Verification and payout setup are separate next steps"
+      ],
+      "actions": [
+        {
+          "label": "Create workspace (prototype)",
+          "to": "workspace"
+        },
+        {
+          "label": "Use personal profile",
+          "to": "account"
+        }
+      ],
+      "fields": [
+        [
+          "Entity type",
+          "select",
+          "Clinic|Store|Organization"
+        ],
+        [
+          "Organization name",
+          "text",
+          ""
+        ],
+        [
+          "City",
+          "text",
+          ""
+        ],
+        [
+          "I am authorized to represent this organization",
+          "checkbox",
+          ""
+        ]
+      ],
+      "back": "onboarding",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "invitation",
+      "path": "/invitations/[token]",
+      "title": "Join a Pawtreon team",
+      "kind": "status",
+      "group": "Identity",
+      "access": "invited authenticated identity",
+      "sections": [
+        "Inviting organization and inviter",
+        "Explicit role and permission summary",
+        "Accept / decline; expiry and revoked state",
+        "Confirm matching email without exposing other invitations"
+      ],
+      "actions": [
+        {
+          "label": "Accept invitation (prototype)",
+          "to": "workspace"
+        },
+        {
+          "label": "Decline and return",
+          "to": "account"
+        }
+      ],
+      "fields": [],
+      "back": "account",
+      "states": [
+        "default",
+        "expired",
+        "revoked",
+        "already-accepted",
+        "wrong-account",
+        "error"
+      ]
+    },
+    {
+      "id": "account",
+      "path": "/account",
+      "title": "Your Pawtreon",
+      "kind": "account",
+      "group": "Personal",
+      "access": "signed-in",
+      "sections": [
+        "Personal identity and organization switcher",
+        "Saved items, donations and notifications",
+        "My cases/campaigns and draft access",
+        "Settings and sign-out"
+      ],
+      "actions": [
+        {
+          "label": "Personal workspace",
+          "to": "workspace"
+        },
+        {
+          "label": "Saved items",
+          "to": "saved"
+        },
+        {
+          "label": "Donation history",
+          "to": "donations"
+        },
+        {
+          "label": "Notifications",
+          "to": "notifications"
+        },
+        {
+          "label": "Account settings",
+          "to": "settings"
+        },
+        {
+          "label": "Add organization",
+          "to": "organization-new"
+        },
+        {
+          "label": "Sign out (prototype)",
+          "to": "home"
+        }
+      ],
+      "fields": [],
+      "back": "home",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "settings",
+      "path": "/account/settings",
+      "title": "Account settings",
+      "kind": "form",
+      "group": "Personal",
+      "access": "signed-in",
+      "sections": [
+        "Name, city and language",
+        "Notification and privacy preferences",
+        "Sensitive changes require recent authentication",
+        "Export/delete request with financial-retention explanation"
+      ],
+      "actions": [
+        {
+          "label": "Save settings (prototype)",
+          "to": "account"
+        },
+        {
+          "label": "Read privacy policy",
+          "to": "privacy"
+        }
+      ],
+      "fields": [
+        [
+          "Display name",
+          "text",
+          ""
+        ],
+        [
+          "Language",
+          "select",
+          "Bulgarian|English"
+        ],
+        [
+          "Email me about followed cases",
+          "checkbox",
+          ""
+        ]
+      ],
+      "back": "account",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "saved",
+      "path": "/account/saved",
+      "title": "Saved cases and campaigns",
+      "kind": "catalog",
+      "group": "Personal",
+      "access": "signed-in",
+      "sections": [
+        "Cases/campaigns tabs",
+        "Saved cards with current status",
+        "Remove saved item without nested card buttons",
+        "Useful empty state with browse link"
+      ],
+      "actions": [
+        {
+          "label": "Open saved case",
+          "to": "case"
+        },
+        {
+          "label": "Open saved campaign",
+          "to": "campaign"
+        },
+        {
+          "label": "Browse cases",
+          "to": "home"
+        }
+      ],
+      "fields": [],
+      "back": "account",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "donations",
+      "path": "/account/donations",
+      "title": "Your contributions",
+      "kind": "list",
+      "group": "Personal",
+      "access": "signed-in",
+      "sections": [
+        "Donation history with amount and recipient",
+        "Pending, paid, refunded and disputed states distinct",
+        "Receipt access and support",
+        "No public donor-email exposure"
+      ],
+      "actions": [
+        {
+          "label": "View contribution",
+          "to": "donation-status"
+        },
+        {
+          "label": "Open receipt",
+          "to": "receipt"
+        },
+        {
+          "label": "Donation policy",
+          "to": "donation-policy"
+        }
+      ],
+      "fields": [],
+      "back": "account",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "notifications",
+      "path": "/account/notifications",
+      "title": "Updates for you",
+      "kind": "list",
+      "group": "Personal",
+      "access": "signed-in",
+      "sections": [
+        "Updates from followed cases",
+        "Help-offer and moderation status changes",
+        "Read/unread control",
+        "Notification preferences and empty state"
+      ],
+      "actions": [
+        {
+          "label": "Read case update",
+          "to": "case-updates"
+        },
+        {
+          "label": "Open workspace",
+          "to": "workspace"
+        },
+        {
+          "label": "Preferences",
+          "to": "settings"
+        }
+      ],
+      "fields": [],
+      "back": "account",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "create",
+      "path": "/create",
+      "title": "What needs help?",
+      "kind": "choice",
+      "group": "Publishing",
+      "access": "signed-in; return-to after auth",
+      "sections": [
+        "Acting personal/organization identity",
+        "Animal case: specific animal or small group",
+        "Campaign: coordinated community initiative",
+        "Existing resumable drafts"
+      ],
+      "actions": [
+        {
+          "label": "Start an animal case",
+          "to": "create-basics"
+        },
+        {
+          "label": "Start a campaign",
+          "to": "create-basics"
+        },
+        {
+          "label": "Resume draft",
+          "to": "create-story"
+        }
+      ],
+      "fields": [],
+      "back": "home",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "create-basics",
+      "path": "/create/[kind]/[draftId]/basics",
+      "title": "Start with the essentials",
+      "kind": "wizard",
+      "group": "Publishing",
+      "access": "draft owner or contributor",
+      "sections": [
+        "Step 1 of 4; acting identity and kind",
+        "Animal/group name or campaign title",
+        "Species, need and coarse location",
+        "No automatic GPS publication"
+      ],
+      "actions": [
+        {
+          "label": "Save and continue",
+          "to": "create-story"
+        },
+        {
+          "label": "Save draft and exit",
+          "to": "workspace"
+        }
+      ],
+      "fields": [
+        [
+          "Title",
+          "text",
+          ""
+        ],
+        [
+          "Species",
+          "select",
+          "Cats|Dogs|Other|Multiple species"
+        ],
+        [
+          "Need",
+          "select",
+          "Medical|Food|Shelter|Foster"
+        ],
+        [
+          "City or neighborhood",
+          "text",
+          ""
+        ]
+      ],
+      "back": "create",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "create-story",
+      "path": "/create/[kind]/[draftId]/story",
+      "title": "Tell their story",
+      "kind": "wizard",
+      "group": "Publishing",
+      "access": "draft owner or contributor",
+      "sections": [
+        "Step 2 of 4; values preserved on back",
+        "Story, planned action and responsible person",
+        "Photos, rights declaration and upload progress",
+        "Private evidence is not public gallery media"
+      ],
+      "actions": [
+        {
+          "label": "Save and continue",
+          "to": "create-funding"
+        },
+        {
+          "label": "Save draft and exit",
+          "to": "workspace"
+        }
+      ],
+      "fields": [
+        [
+          "Story and planned help",
+          "textarea",
+          ""
+        ],
+        [
+          "Case or campaign photographs",
+          "file",
+          ""
+        ],
+        [
+          "I have the right to publish these images",
+          "checkbox",
+          ""
+        ]
+      ],
+      "back": "create-basics",
+      "states": [
+        "default",
+        "uploading",
+        "upload-failed",
+        "validation-error",
+        "save-conflict",
+        "offline"
+      ]
+    },
+    {
+      "id": "create-funding",
+      "path": "/create/[kind]/[draftId]/funding",
+      "title": "Plan the help needed",
+      "kind": "wizard",
+      "group": "Publishing",
+      "access": "draft owner or contributor",
+      "sections": [
+        "Step 3 of 4; money, practical help, or both",
+        "Budget rows and target in minor units",
+        "Beneficiary readiness and private evidence",
+        "No-money case skips target and shows help request"
+      ],
+      "actions": [
+        {
+          "label": "Review draft",
+          "to": "create-review"
+        },
+        {
+          "label": "Save draft and exit",
+          "to": "workspace"
+        }
+      ],
+      "fields": [
+        [
+          "Help requested",
+          "select",
+          "Money and practical help|Practical help only|Money only"
+        ],
+        [
+          "Target in EUR",
+          "number",
+          ""
+        ],
+        [
+          "Budget and use of funds",
+          "textarea",
+          ""
+        ],
+        [
+          "Private estimate or supporting document",
+          "file",
+          ""
+        ]
+      ],
+      "back": "create-story",
+      "states": [
+        "default",
+        "validation-error",
+        "upload-failed",
+        "beneficiary-not-ready",
+        "save-conflict",
+        "offline"
+      ]
+    },
+    {
+      "id": "create-review",
+      "path": "/create/[kind]/[draftId]/review",
+      "title": "Review before submitting",
+      "kind": "wizard",
+      "group": "Publishing",
+      "access": "owner/manager publishes; contributor submits for review",
+      "sections": [
+        "Step 4 of 4; public preview",
+        "Budget, location privacy and acting identity",
+        "Unresolved fields and processor readiness clearly listed",
+        "Publishing agreements and honest review expectation"
+      ],
+      "actions": [
+        {
+          "label": "Submit for review (prototype)",
+          "to": "create-status"
+        },
+        {
+          "label": "Edit story",
+          "to": "create-story"
+        },
+        {
+          "label": "Save draft and exit",
+          "to": "workspace"
+        }
+      ],
+      "fields": [
+        [
+          "I confirm the information is accurate",
+          "checkbox",
+          ""
+        ]
+      ],
+      "back": "create-funding",
+      "states": [
+        "default",
+        "validation-error",
+        "permission-denied",
+        "submitting",
+        "error",
+        "offline"
+      ]
+    },
+    {
+      "id": "create-status",
+      "path": "/create/[kind]/[draftId]/status",
+      "title": "Submission status",
+      "kind": "status",
+      "group": "Publishing",
+      "access": "draft owner or workspace member",
+      "sections": [
+        "Pending review, changes needed, published or rejected",
+        "Specific actionable reviewer feedback",
+        "Payment readiness remains separate from content approval",
+        "Resume editing without duplicating a fundraiser"
+      ],
+      "actions": [
+        {
+          "label": "View in workspace",
+          "to": "manage-fundraiser"
+        },
+        {
+          "label": "Edit draft",
+          "to": "create-story"
+        },
+        {
+          "label": "Browse cases",
+          "to": "home"
+        }
+      ],
+      "fields": [],
+      "back": "create-review",
+      "states": [
+        "submitted",
+        "needs-changes",
+        "published",
+        "rejected",
+        "error",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "workspace",
+      "path": "/workspaces/[workspaceId]",
+      "title": "Organizer workspace",
+      "kind": "workspace",
+      "group": "Workspace",
+      "access": "active workspace membership",
+      "sections": [
+        "Acting identity switcher and role",
+        "Cases/campaigns needing action; drafts",
+        "Review and payout readiness without fake metrics",
+        "Recent updates and tasks"
+      ],
+      "actions": [
+        {
+          "label": "Manage fundraisers",
+          "to": "manage-list"
+        },
+        {
+          "label": "Create new",
+          "to": "create"
+        },
+        {
+          "label": "Verification",
+          "to": "verification"
+        },
+        {
+          "label": "Payout settings",
+          "to": "payouts"
+        },
+        {
+          "label": "Team members",
+          "to": "members"
+        },
+        {
+          "label": "Workspace settings",
+          "to": "workspace-settings"
+        }
+      ],
+      "fields": [],
+      "back": "account",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "manage-list",
+      "path": "/workspaces/[workspaceId]/fundraisers",
+      "title": "Your cases and campaigns",
+      "kind": "list",
+      "group": "Workspace",
+      "access": "active workspace membership",
+      "sections": [
+        "Search and draft/published/resolved filters",
+        "Status, need and organizer-owned totals",
+        "Resume draft and manage published item",
+        "Contributor restrictions visible but enforced server-side"
+      ],
+      "actions": [
+        {
+          "label": "Manage winter homes",
+          "to": "manage-fundraiser"
+        },
+        {
+          "label": "Resume draft",
+          "to": "create-story"
+        },
+        {
+          "label": "Create another",
+          "to": "create"
+        }
+      ],
+      "fields": [],
+      "back": "workspace",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "manage-fundraiser",
+      "path": "/workspaces/[workspaceId]/fundraisers/[fundraiserId]",
+      "title": "Manage winter homes",
+      "kind": "workspace",
+      "group": "Workspace",
+      "access": "scoped member; operation-specific role",
+      "sections": [
+        "Public preview and current status",
+        "Budget, progress and review feedback",
+        "Post update, edit with audit, pause or resolve",
+        "Financial and evidence access by permission"
+      ],
+      "actions": [
+        {
+          "label": "Preview public campaign",
+          "to": "campaign"
+        },
+        {
+          "label": "Post an update",
+          "to": "update-editor"
+        },
+        {
+          "label": "Edit draft/details",
+          "to": "create-basics"
+        },
+        {
+          "label": "View payouts",
+          "to": "payouts"
+        }
+      ],
+      "fields": [],
+      "back": "manage-list",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "update-editor",
+      "path": "/workspaces/[workspaceId]/fundraisers/[fundraiserId]/updates/new",
+      "title": "Share a progress update",
+      "kind": "form",
+      "group": "Workspace",
+      "access": "owner/manager; contributor drafts",
+      "sections": [
+        "Dated headline and truthful progress",
+        "Photos and redacted expense evidence",
+        "Public/private document distinction",
+        "Preview before publishing"
+      ],
+      "actions": [
+        {
+          "label": "Publish update (prototype)",
+          "to": "campaign-updates"
+        },
+        {
+          "label": "Save and return",
+          "to": "manage-fundraiser"
+        }
+      ],
+      "fields": [
+        [
+          "Update title",
+          "text",
+          ""
+        ],
+        [
+          "What changed?",
+          "textarea",
+          ""
+        ],
+        [
+          "Progress photographs",
+          "file",
+          ""
+        ]
+      ],
+      "back": "manage-fundraiser",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "payouts",
+      "path": "/workspaces/[workspaceId]/payouts",
+      "title": "Funding and payouts",
+      "kind": "workspace",
+      "group": "Workspace",
+      "access": "owner/finance-authorized; recent auth",
+      "sections": [
+        "Provider approval and beneficiary readiness",
+        "Hosted onboarding; no bank-detail collection in prototype",
+        "Pending/available/paid/refunded/disputed amounts separate",
+        "Payout failure reasons and reconciliation history"
+      ],
+      "actions": [
+        {
+          "label": "Read funding policy",
+          "to": "donation-policy"
+        },
+        {
+          "label": "Contact support",
+          "to": "support"
+        },
+        {
+          "label": "Return to workspace",
+          "to": "workspace"
+        }
+      ],
+      "fields": [],
+      "back": "workspace",
+      "states": [
+        "not-ready",
+        "pending-verification",
+        "ready",
+        "held",
+        "failed",
+        "permission-denied",
+        "offline"
+      ]
+    },
+    {
+      "id": "members",
+      "path": "/workspaces/[workspaceId]/members",
+      "title": "Your team",
+      "kind": "form",
+      "group": "Workspace",
+      "access": "owner; manager limited read",
+      "sections": [
+        "Members and role descriptions",
+        "Invite by email; expiry and revoke",
+        "Prevent removing the last owner",
+        "No contributor escalation through client fields"
+      ],
+      "actions": [
+        {
+          "label": "Preview invitation",
+          "to": "invitation"
+        },
+        {
+          "label": "Return to workspace",
+          "to": "workspace"
+        }
+      ],
+      "fields": [
+        [
+          "Invite email",
+          "email",
+          ""
+        ],
+        [
+          "Role",
+          "select",
+          "Manager|Contributor|Viewer"
+        ]
+      ],
+      "back": "workspace",
+      "states": [
+        "default",
+        "pending-invite",
+        "expired",
+        "last-owner-blocked",
+        "permission-denied",
+        "error"
+      ]
+    },
+    {
+      "id": "verification",
+      "path": "/workspaces/[workspaceId]/verification",
+      "title": "Organizer verification",
+      "kind": "form",
+      "group": "Workspace",
+      "access": "owner or authorized manager",
+      "sections": [
+        "What verification does and does not mean",
+        "Private organization/clinic supporting documents",
+        "Review status and corrections",
+        "Payout-provider verification is separate"
+      ],
+      "actions": [
+        {
+          "label": "Submit evidence (prototype)",
+          "to": "workspace"
+        },
+        {
+          "label": "Contact support",
+          "to": "support"
+        }
+      ],
+      "fields": [
+        [
+          "Public organization name",
+          "text",
+          ""
+        ],
+        [
+          "Private supporting document",
+          "file",
+          ""
+        ],
+        [
+          "Context for the reviewer",
+          "textarea",
+          ""
+        ]
+      ],
+      "back": "workspace",
+      "states": [
+        "not-started",
+        "submitted",
+        "reviewing",
+        "approved",
+        "needs-changes",
+        "rejected",
+        "expired",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "workspace-settings",
+      "path": "/workspaces/[workspaceId]/settings",
+      "title": "Workspace settings",
+      "kind": "form",
+      "group": "Workspace",
+      "access": "owner/manager; operation-specific checks",
+      "sections": [
+        "Name, entity type and service area",
+        "Intentional public contacts; precise colony data never public",
+        "Membership ownership changes protected",
+        "Archive policy retains financial records"
+      ],
+      "actions": [
+        {
+          "label": "Save settings (prototype)",
+          "to": "workspace"
+        },
+        {
+          "label": "Preview profile",
+          "to": "organization"
+        }
+      ],
+      "fields": [
+        [
+          "Public name",
+          "text",
+          ""
+        ],
+        [
+          "Service area",
+          "text",
+          ""
+        ],
+        [
+          "Public contact email (optional)",
+          "email",
+          ""
+        ]
+      ],
+      "back": "workspace",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "report",
+      "path": "/report?subject=[type:id]",
+      "title": "Report a concern",
+      "kind": "form",
+      "group": "Review and help",
+      "access": "public with abuse prevention",
+      "sections": [
+        "Subject being reported",
+        "Fraud, misleading evidence, animal welfare or privacy reason",
+        "Optional private contact; no public accusation page",
+        "Acknowledgement and review expectations"
+      ],
+      "actions": [
+        {
+          "label": "Preview report acknowledgement",
+          "to": "support"
+        },
+        {
+          "label": "Return to case",
+          "to": "case"
+        }
+      ],
+      "fields": [
+        [
+          "Reason",
+          "select",
+          "Misleading fundraiser|Animal welfare|Privacy|Other"
+        ],
+        [
+          "What concerns you?",
+          "textarea",
+          ""
+        ],
+        [
+          "Contact email (optional)",
+          "email",
+          ""
+        ]
+      ],
+      "back": "case",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "review-queue",
+      "path": "/admin/reviews",
+      "title": "Review queue",
+      "kind": "admin",
+      "group": "Review and help",
+      "access": "platform reviewer; MFA/recent auth",
+      "sections": [
+        "Submitted cases/campaigns and organizer evidence",
+        "Assigned/unassigned filters and age",
+        "Private evidence accessible only by role",
+        "No public admin navigation"
+      ],
+      "actions": [
+        {
+          "label": "Open review",
+          "to": "review-detail"
+        },
+        {
+          "label": "Reported content",
+          "to": "admin-reports"
+        }
+      ],
+      "fields": [],
+      "back": "account",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "review-detail",
+      "path": "/admin/reviews/[reviewId]",
+      "title": "Review a submission",
+      "kind": "admin",
+      "group": "Review and help",
+      "access": "assigned/authorized platform reviewer",
+      "sections": [
+        "Public preview beside restricted evidence",
+        "Identity and factual evidence checks are separate",
+        "Approve / request changes / reject with reason",
+        "Immutable audit and no approval of own submission"
+      ],
+      "actions": [
+        {
+          "label": "Record review decision (prototype)",
+          "to": "review-queue"
+        },
+        {
+          "label": "View public preview",
+          "to": "campaign"
+        }
+      ],
+      "fields": [
+        [
+          "Decision",
+          "select",
+          "Request changes|Approve content|Reject"
+        ],
+        [
+          "Reason and feedback",
+          "textarea",
+          ""
+        ]
+      ],
+      "back": "review-queue",
+      "states": [
+        "default",
+        "locked",
+        "already-reviewed",
+        "permission-denied",
+        "error"
+      ]
+    },
+    {
+      "id": "admin-reports",
+      "path": "/admin/reports",
+      "title": "Reported content",
+      "kind": "admin",
+      "group": "Review and help",
+      "access": "platform reviewer",
+      "sections": [
+        "Triage by reason and severity",
+        "Protect reporter identity",
+        "Pause/remove with documented policy reason",
+        "Appeal and audit history"
+      ],
+      "actions": [
+        {
+          "label": "Inspect subject",
+          "to": "review-detail"
+        },
+        {
+          "label": "Back to reviews",
+          "to": "review-queue"
+        }
+      ],
+      "fields": [],
+      "back": "review-queue",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "support",
+      "path": "/help",
+      "title": "Help and contact",
+      "kind": "form",
+      "group": "Review and help",
+      "access": "public",
+      "sections": [
+        "Donation, account and case help topics",
+        "App is not an emergency response service",
+        "Private support request, no public medical documents",
+        "Response expectations and status reference"
+      ],
+      "actions": [
+        {
+          "label": "Preview request saved",
+          "to": "account"
+        },
+        {
+          "label": "Donation policy",
+          "to": "donation-policy"
+        },
+        {
+          "label": "Browse cases",
+          "to": "home"
+        }
+      ],
+      "fields": [
+        [
+          "Topic",
+          "select",
+          "Donation|Account|Publishing|Report follow-up|Other"
+        ],
+        [
+          "Your email",
+          "email",
+          ""
+        ],
+        [
+          "Message",
+          "textarea",
+          ""
+        ]
+      ],
+      "back": "home",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "terms",
+      "path": "/legal/terms",
+      "title": "Terms of use",
+      "kind": "legal",
+      "group": "Review and help",
+      "access": "public",
+      "sections": [
+        "Platform role, eligibility and acceptable content",
+        "Organizer responsibilities and moderation/appeals",
+        "Account suspension and jurisdiction",
+        "Dated owner/legal-review placeholder; not approved legal text"
+      ],
+      "actions": [
+        {
+          "label": "Privacy notice",
+          "to": "privacy"
+        },
+        {
+          "label": "Donation policy",
+          "to": "donation-policy"
+        },
+        {
+          "label": "Return to help",
+          "to": "support"
+        }
+      ],
+      "fields": [],
+      "back": "support",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "privacy",
+      "path": "/legal/privacy",
+      "title": "Privacy notice",
+      "kind": "legal",
+      "group": "Review and help",
+      "access": "public",
+      "sections": [
+        "Data categories, purposes and lawful-basis review",
+        "Private evidence, donor privacy and public location precision",
+        "Processors, retention, rights and contact details",
+        "Owner/legal review required before launch"
+      ],
+      "actions": [
+        {
+          "label": "Terms of use",
+          "to": "terms"
+        },
+        {
+          "label": "Account preferences",
+          "to": "settings"
+        },
+        {
+          "label": "Contact support",
+          "to": "support"
+        }
+      ],
+      "fields": [],
+      "back": "support",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "donation-policy",
+      "path": "/legal/donations",
+      "title": "Donation and funding policy",
+      "kind": "legal",
+      "group": "Review and help",
+      "access": "public",
+      "sections": [
+        "Recipient and processor; platform fee disclosure",
+        "Refunds, disputes, unused funds and cancellation",
+        "No guaranteed outcome or automatic tax deduction",
+        "Provider approval and reviewed legal text required"
+      ],
+      "actions": [
+        {
+          "label": "Contact support",
+          "to": "support"
+        },
+        {
+          "label": "Return to campaign",
+          "to": "campaign"
+        }
+      ],
+      "fields": [],
+      "back": "support",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "not-found",
+      "path": "not-found.tsx",
+      "title": "We could not find this page",
+      "kind": "status",
+      "group": "Review and help",
+      "access": "public",
+      "sections": [
+        "Clear missing/removed/private-safe message",
+        "No confidential reason leakage",
+        "Recovery through search and discovery"
+      ],
+      "actions": [
+        {
+          "label": "Browse cases",
+          "to": "home"
+        },
+        {
+          "label": "Search",
+          "to": "search"
+        }
+      ],
+      "fields": [],
+      "back": "home",
+      "states": [
+        "not-found"
+      ]
+    },
+    {
+      "id": "filters",
+      "path": "overlay: filters",
+      "title": "Find the right cause",
+      "kind": "sheet",
+      "group": "Overlays",
+      "access": "public",
+      "sections": [
+        "Draft filter state separate from applied state",
+        "Need, urgency, organizer type and radius",
+        "Reset all / show results with honest count",
+        "Cancel returns without applying changes"
+      ],
+      "actions": [
+        {
+          "label": "Apply filters (prototype)",
+          "to": "search"
+        },
+        {
+          "label": "Reset and browse",
+          "to": "home"
+        }
+      ],
+      "fields": [
+        [
+          "Need",
+          "select",
+          "Any need|Medical|Food|Shelter|Foster"
+        ],
+        [
+          "Organizer",
+          "select",
+          "Any organizer|Personal|Clinic|Store|Organization"
+        ],
+        [
+          "Urgent only",
+          "checkbox",
+          ""
+        ],
+        [
+          "Evidence reviewed only",
+          "checkbox",
+          ""
+        ]
+      ],
+      "back": "home",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ]
+    },
+    {
+      "id": "location",
+      "path": "overlay: location",
+      "title": "Choose your area",
+      "kind": "sheet",
+      "group": "Overlays",
+      "access": "public",
+      "sections": [
+        "Manual city search first",
+        "Use location only after user request",
+        "Denied permission keeps manual selection working",
+        "Area radius never exposes colony coordinates"
+      ],
+      "actions": [
+        {
+          "label": "Use selected city",
+          "to": "home"
+        },
+        {
+          "label": "Cancel",
+          "to": "home"
+        }
+      ],
+      "fields": [
+        [
+          "City",
+          "select",
+          "Varna|Sofia|Plovdiv|Other"
+        ],
+        [
+          "Radius",
+          "select",
+          "City only|5 km|10 km|25 km"
+        ]
+      ],
+      "back": "home",
+      "states": [
+        "default",
+        "searching",
+        "empty",
+        "location-denied",
+        "offline"
+      ]
+    },
+    {
+      "id": "share",
+      "path": "overlay: share",
+      "title": "Help others discover this",
+      "kind": "sheet",
+      "group": "Overlays",
+      "access": "public",
+      "sections": [
+        "Native share when supported",
+        "Copy canonical public URL with correct locale",
+        "No private drafts/evidence/guest receipt tokens",
+        "Confirmation only after copy succeeds"
+      ],
+      "actions": [
+        {
+          "label": "Return to campaign",
+          "to": "campaign"
+        },
+        {
+          "label": "Back to case",
+          "to": "case"
+        }
+      ],
+      "fields": [],
+      "back": "campaign",
+      "states": [
+        "default",
+        "copied",
+        "copy-failed"
+      ]
+    }
+  ]
+}
