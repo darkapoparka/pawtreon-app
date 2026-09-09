@@ -11,8 +11,10 @@ Checkboxes describe evidence, not promises of production completion.
 - [x] Document discovery, identity, giving, publishing, helper and review journeys.
 - [x] Generate clickable wireframes and validate all route destinations.
 - [x] Define mobile hierarchy, filtering, card geometry and flat navigation.
-- [x] Write eight coordinated visual board briefs.
-- [ ] Generate and import image boards; verify actual files and coverage.
+- [x] Write initial overview briefs (now superseded by individual-screen workflow).
+- [x] Organize all 53 catalogue entries into screen folders with specs, states, transitions and individual image briefs.
+- [x] Research current reference apps and document selective adaptation rather than a whole-app restart.
+- [ ] Generate and import high-fidelity concepts one screen/state at a time; verify actual image files and coverage.
 - [ ] Obtain owner acceptance of the core visual system.
 - [x] Initialize using official create-next-app and shadcn CLIs.
 - [x] Install frontend dependencies and expose the noindex /design workbench.

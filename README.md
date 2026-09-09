@@ -8,6 +8,8 @@ Design-first foundation. This repository is intentionally new. Wireframes, route
 
 Start with [PRD](PRD.md), [design decisions](docs/design/DECISIONS.md), [UI specification](docs/design/UI-SPEC.md), [route catalogue](docs/design/ROUTES.md) and [journeys](docs/design/FLOWS.md). Open `docs/design/wireframes/index.html` for the standalone clickable wireframe workbench.
 
+Screen-by-screen design: [53 individual folders](docs/design/screens/README.md), [generation/review workflow](docs/design/SCREEN-WORKFLOW.md), and [current reference apps](docs/design/REFERENCE-APPS.md). Each screen has a specification, relevant states and its own image brief. The high-fidelity images are not yet imported or approved.
+
 Implementation guidance: [AGENTS.md](AGENTS.md), [TECHSTACK.md](TECHSTACK.md), [ARCHITECTURE.md](ARCHITECTURE.md), [TASKS.md](TASKS.md), [security and payments](docs/SECURITY-AND-PAYMENTS.md), [acceptance](docs/ACCEPTANCE.md).
 
 ## Workspace identity

@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "status": "proposed-not-owner-approved",
+  "folderNames": {
+    "home": "homepage",
+    "case": "case-detail",
+    "campaign": "campaign-detail",
+    "person": "personal-profile",
+    "organization": "organization-profile",
+    "donate": "donation"
+  },
+  "byGroup": {
+    "Discovery": "Use the compact discovery shell and animal-led imagery. Share one applied query model between search, chips, sort and map. Prefer the earlier Pawtreon homepage over the smaller multi-screen boards. External reference: Airbnb discovery; adapt to fundraising rather than travel.",
+    "Stories": "Make the animal or initiative the visual focus. Organizer identity, need and funding status must be legible. Use the editorial campaign style only where appropriate; do not turn case records into marketing posters. External reference: GoFundMe campaign context, with Pawtreon art direction.",
+    "Donations": "Quiet, focused giving or practical-help task. Show recipient, total and the actual next action. No global dock, guilt prompts, fabricated payment badges or preselected subscriptions. External reference: ShareTheMeal simplicity and GoFundMe fundraiser context.",
+    "Identity": "One human login, then optional organization setup. Compact logo and calm forms, no mandatory splash carousel. All input text remains readable with the software keyboard. Do not copy password/social-login options that are not in the route contract.",
+    "Personal": "A private account area, not a public social feed. Group saved items, contributions, notifications and settings. Make acting identity explicit; show contextual role labels rather than decorative verification.",
+    "Publishing": "Keep one consistent wizard shell: back/title, acting identity, step label, form, save status and one primary next action. Campaign and case share components but have different content. Preserve all fields on Back and explain private evidence separately.",
+    "Workspace": "Mobile operational UI with readable lists and clear status, not a desktop table squeezed into a phone. Keep active organizer and permissions visible. Surface actions needing attention; do not fabricate donation balances, payouts or performance charts.",
+    "Review and help": "Calm, task-first pages using shared typography and controls. Admin screens need explicit permissions, reasons and evidence separation; support/legal screens need readable text. No ornamental animal hero or consumer dock inside a review decision task.",
+    "Overlays": "Draw the actual modal sheet above a lightly dimmed initiating screen. Title, explicit close, focus return and one apply/confirm action. Do not add an independent bottom dock inside the sheet."
+  },
+  "byId": {
+    "home": {
+      "reference": "Earlier two-phone concept, LEFT homepage: Warm Homes, Brighter Tomorrows. Airbnb 2026 discovery is a secondary benchmark, not a replacement.",
+      "composition": [
+        "56px header: compact Pawtreon wordmark, plain city selector, small avatar; no tagline or outlined location capsule.",
+        "Search and filter share one row; a single species row follows. Urgency/need/organizer details live in the filter sheet.",
+        "A 200-240px editorial winter-shelter banner uses a real-looking cat photo, short serif headline and one support action. No impact-counter strip or extra toolbar.",
+        "Below the banner: Cases near you, a compact sort action and Map; then a two-column grid at 390px with 16px gutters and 12px gap.",
+        "Card: 4:3 photo, optional need/urgency badge, two-line title, named organizer/type, then raised/goal and a thin progress bar. No paragraph description in the narrow grid.",
+        "Flat 64px navigation: Cases / Create / Campaigns. Equal action areas, 22-24px icons, small same-plane plus, no raised circle or large shadow.",
+        "Allow the lower portion of the first card row to continue below the viewport. Do not shrink the UI to reveal every card."
+      ],
+      "review": [
+        "Show search results without the promotional banner when an explicit query/urgent search is applied.",
+        "Save is a separate accessible control; no nested link/button targets.",
+        "At 360px use the specified single-column layout, not tiny two-column copy."
+      ]
+    },
+    "case": {
+      "reference": "Pawtreon animal-led cards extended into detail; GoFundMe organizer/story/progress flow.",
+      "composition": [
+        "Start with a 4:3 animal gallery and discreet back/share/save controls.",
+        "Below the image, show need/status, a short case title, named organizer and approximate area.",
+        "Show unambiguous funding progress only for financial cases. Foster-only cases show practical help instead.",
+        "Story, budget/evidence summary and dated updates continue naturally below the fold.",
+        "One sticky footer: Donate plus a secondary practical-help action when applicable. No global dock on this task."
+      ],
+      "review": [
+        "Create separate visual states for paused, resolved and funding unavailable; never leave an active donation CTA.",
+        "Do not bury organizer and recipient under hidden tabs."
+      ]
+    },
+    "campaign": {
+      "reference": "Earlier two-phone concept, RIGHT composition: immersive cat photograph and editorial heading above a white content sheet.",
+      "composition": [
+        "Use an approximately 280-320px immersive campaign image at 390px, with a restrained scrim and a short editorial serif headline.",
+        "Transition into a white rounded-top content section with responsible organizer, purpose and funding progress.",
+        "Show an itemized shelter budget, installation/maintenance plan and dated construction updates below the fold.",
+        "Related cases are secondary. Include a coarse-area map only when useful to this initiative, not a generic discovery feed.",
+        "Use one sticky Support campaign footer. Remove decorative statistics, handwriting and duplicated donation buttons."
+      ],
+      "review": [
+        "The initial viewport must expose who organizes the campaign and the start of the funding/context section.",
+        "A later scrolled concept covers budget and updates; do not compress both into one first-fold image."
+      ]
+    },
+    "donate": {
+      "reference": "ShareTheMeal focused amount-selection pattern; GoFundMe recipient/fundraiser context. Retain Pawtreon tokens.",
+      "composition": [
+        "Compact back/title row, followed by a small fundraiser thumbnail and recipient summary.",
+        "Suggested one-time amounts and custom amount share a clear selected treatment.",
+        "Receipt email and public donor-name privacy are separate, clearly labeled fields.",
+        "Place a readable total and any applicable fee disclosure before the provider handoff.",
+        "One focused continue button; no global dock, invented card fields, prechecked tip or monthly-giving switch."
+      ],
+      "review": [
+        "A generated screen cannot establish provider approval or payment success.",
+        "Pending, failed and confirmed result screens are distinct from amount selection.",
+        "Use the same radius, type scale and button geometry as the accepted discovery/detail screens."
+      ]
+    },
+    "create": {
+      "reference": "Task-focused creation patterns informed by GoFundMe; one Pawtreon publishing system.",
+      "composition": [
+        "Compact back/title header with the acting personal or organization identity directly below.",
+        "Only two primary choices: Animal case and Community campaign, each with an icon and a short purpose statement.",
+        "Existing drafts appear in a quiet secondary section; resume opens the saved step.",
+        "No third Event or Adoption product. Foster/adoption help remains a case need according to PRD.",
+        "Do not show a global dock and an additional fixed task footer at the same time."
+      ],
+      "review": [
+        "Both choices must preserve kind and acting identity through login and the wizard.",
+        "A clinic/store/organization selector does not grant permissions."
+      ]
+    },
+    "organization": {
+      "reference": "GoFundMe organizer context; Patreon only for profile/update hierarchy, not memberships.",
+      "composition": [
+        "A restrained logo/name header with the actual entity type and verification scope.",
+        "Shared profile template for clinic, store and organization, with appropriately labeled contact/service information.",
+        "Show active cases/campaigns and public updates using the accepted card components.",
+        "Only intentional public business addresses may be precise; never reveal stray-colony coordinates."
+      ],
+      "review": [
+        "Prepare content variants for clinic, store and organization without inventing three independent authentication systems."
+      ]
+    }
+  }
+}

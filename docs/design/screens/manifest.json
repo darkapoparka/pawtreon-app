@@ -1,0 +1,849 @@
+{
+  "schemaVersion": 1,
+  "source": "../routes.json",
+  "artDirection": "../screen-art-direction.json",
+  "note": "Coverage only; not image generation, implementation or owner approval.",
+  "entries": [
+    {
+      "id": "home",
+      "folder": "homepage",
+      "path": "/",
+      "group": "Discovery",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "homepage/README.md",
+      "brief": "homepage/IMAGEGEN.md"
+    },
+    {
+      "id": "campaigns",
+      "folder": "campaigns",
+      "path": "/campaigns",
+      "group": "Discovery",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "campaigns/README.md",
+      "brief": "campaigns/IMAGEGEN.md"
+    },
+    {
+      "id": "search",
+      "folder": "search",
+      "path": "/search",
+      "group": "Discovery",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "search/README.md",
+      "brief": "search/IMAGEGEN.md"
+    },
+    {
+      "id": "map",
+      "folder": "map",
+      "path": "/map",
+      "group": "Discovery",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "location-denied"
+      ],
+      "spec": "map/README.md",
+      "brief": "map/IMAGEGEN.md"
+    },
+    {
+      "id": "case",
+      "folder": "case-detail",
+      "path": "/cases/[slug]",
+      "group": "Stories",
+      "states": [
+        "default",
+        "loading",
+        "error",
+        "offline",
+        "not-found",
+        "paused",
+        "resolved",
+        "funding-unavailable"
+      ],
+      "spec": "case-detail/README.md",
+      "brief": "case-detail/IMAGEGEN.md"
+    },
+    {
+      "id": "campaign",
+      "folder": "campaign-detail",
+      "path": "/campaigns/[slug]",
+      "group": "Stories",
+      "states": [
+        "default",
+        "loading",
+        "error",
+        "offline",
+        "not-found",
+        "paused",
+        "completed",
+        "funding-unavailable"
+      ],
+      "spec": "campaign-detail/README.md",
+      "brief": "campaign-detail/IMAGEGEN.md"
+    },
+    {
+      "id": "case-updates",
+      "folder": "case-updates",
+      "path": "/cases/[slug]/updates",
+      "group": "Stories",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "case-updates/README.md",
+      "brief": "case-updates/IMAGEGEN.md"
+    },
+    {
+      "id": "campaign-updates",
+      "folder": "campaign-updates",
+      "path": "/campaigns/[slug]/updates",
+      "group": "Stories",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "campaign-updates/README.md",
+      "brief": "campaign-updates/IMAGEGEN.md"
+    },
+    {
+      "id": "person",
+      "folder": "personal-profile",
+      "path": "/people/[handle]",
+      "group": "Stories",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "personal-profile/README.md",
+      "brief": "personal-profile/IMAGEGEN.md"
+    },
+    {
+      "id": "organization",
+      "folder": "organization-profile",
+      "path": "/organizations/[slug]",
+      "group": "Stories",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "organization-profile/README.md",
+      "brief": "organization-profile/IMAGEGEN.md"
+    },
+    {
+      "id": "offer-help",
+      "folder": "offer-help",
+      "path": "/cases/[slug]/help",
+      "group": "Donations",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "offer-help/README.md",
+      "brief": "offer-help/IMAGEGEN.md"
+    },
+    {
+      "id": "help-sent",
+      "folder": "help-sent",
+      "path": "/cases/[slug]/help/status",
+      "group": "Donations",
+      "states": [
+        "default",
+        "loading",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "help-sent/README.md",
+      "brief": "help-sent/IMAGEGEN.md"
+    },
+    {
+      "id": "donate",
+      "folder": "donation",
+      "path": "/donate/[fundraiserId]",
+      "group": "Donations",
+      "states": [
+        "default",
+        "loading",
+        "error",
+        "offline",
+        "funding-unavailable",
+        "invalid-amount",
+        "goal-reached"
+      ],
+      "spec": "donation/README.md",
+      "brief": "donation/IMAGEGEN.md"
+    },
+    {
+      "id": "donation-status",
+      "folder": "donation-status",
+      "path": "/donations/[donationId]/status",
+      "group": "Donations",
+      "states": [
+        "pending",
+        "succeeded",
+        "failed",
+        "canceled",
+        "offline",
+        "not-found",
+        "permission-denied"
+      ],
+      "spec": "donation-status/README.md",
+      "brief": "donation-status/IMAGEGEN.md"
+    },
+    {
+      "id": "receipt",
+      "folder": "receipt",
+      "path": "/donations/[donationId]/receipt",
+      "group": "Donations",
+      "states": [
+        "default",
+        "loading",
+        "error",
+        "permission-denied",
+        "not-found"
+      ],
+      "spec": "receipt/README.md",
+      "brief": "receipt/IMAGEGEN.md"
+    },
+    {
+      "id": "sign-in",
+      "folder": "sign-in",
+      "path": "/sign-in",
+      "group": "Identity",
+      "states": [
+        "default",
+        "submitting",
+        "invalid-email",
+        "rate-limited",
+        "error",
+        "offline"
+      ],
+      "spec": "sign-in/README.md",
+      "brief": "sign-in/IMAGEGEN.md"
+    },
+    {
+      "id": "sign-up",
+      "folder": "sign-up",
+      "path": "/sign-up",
+      "group": "Identity",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "sign-up/README.md",
+      "brief": "sign-up/IMAGEGEN.md"
+    },
+    {
+      "id": "check-email",
+      "folder": "check-email",
+      "path": "/auth/check-email",
+      "group": "Identity",
+      "states": [
+        "default",
+        "resending",
+        "expired",
+        "rate-limited",
+        "error",
+        "offline"
+      ],
+      "spec": "check-email/README.md",
+      "brief": "check-email/IMAGEGEN.md"
+    },
+    {
+      "id": "auth-error",
+      "folder": "auth-error",
+      "path": "/auth/error",
+      "group": "Identity",
+      "states": [
+        "expired",
+        "invalid-link",
+        "error",
+        "offline"
+      ],
+      "spec": "auth-error/README.md",
+      "brief": "auth-error/IMAGEGEN.md"
+    },
+    {
+      "id": "onboarding",
+      "folder": "onboarding",
+      "path": "/onboarding",
+      "group": "Identity",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "onboarding/README.md",
+      "brief": "onboarding/IMAGEGEN.md"
+    },
+    {
+      "id": "organization-new",
+      "folder": "organization-new",
+      "path": "/organizations/new",
+      "group": "Identity",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "organization-new/README.md",
+      "brief": "organization-new/IMAGEGEN.md"
+    },
+    {
+      "id": "invitation",
+      "folder": "invitation",
+      "path": "/invitations/[token]",
+      "group": "Identity",
+      "states": [
+        "default",
+        "expired",
+        "revoked",
+        "already-accepted",
+        "wrong-account",
+        "error"
+      ],
+      "spec": "invitation/README.md",
+      "brief": "invitation/IMAGEGEN.md"
+    },
+    {
+      "id": "account",
+      "folder": "account",
+      "path": "/account",
+      "group": "Personal",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "account/README.md",
+      "brief": "account/IMAGEGEN.md"
+    },
+    {
+      "id": "settings",
+      "folder": "settings",
+      "path": "/account/settings",
+      "group": "Personal",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "settings/README.md",
+      "brief": "settings/IMAGEGEN.md"
+    },
+    {
+      "id": "saved",
+      "folder": "saved",
+      "path": "/account/saved",
+      "group": "Personal",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "saved/README.md",
+      "brief": "saved/IMAGEGEN.md"
+    },
+    {
+      "id": "donations",
+      "folder": "donations",
+      "path": "/account/donations",
+      "group": "Personal",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "donations/README.md",
+      "brief": "donations/IMAGEGEN.md"
+    },
+    {
+      "id": "notifications",
+      "folder": "notifications",
+      "path": "/account/notifications",
+      "group": "Personal",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "notifications/README.md",
+      "brief": "notifications/IMAGEGEN.md"
+    },
+    {
+      "id": "create",
+      "folder": "create",
+      "path": "/create",
+      "group": "Publishing",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "create/README.md",
+      "brief": "create/IMAGEGEN.md"
+    },
+    {
+      "id": "create-basics",
+      "folder": "create-basics",
+      "path": "/create/[kind]/[draftId]/basics",
+      "group": "Publishing",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "create-basics/README.md",
+      "brief": "create-basics/IMAGEGEN.md"
+    },
+    {
+      "id": "create-story",
+      "folder": "create-story",
+      "path": "/create/[kind]/[draftId]/story",
+      "group": "Publishing",
+      "states": [
+        "default",
+        "uploading",
+        "upload-failed",
+        "validation-error",
+        "save-conflict",
+        "offline"
+      ],
+      "spec": "create-story/README.md",
+      "brief": "create-story/IMAGEGEN.md"
+    },
+    {
+      "id": "create-funding",
+      "folder": "create-funding",
+      "path": "/create/[kind]/[draftId]/funding",
+      "group": "Publishing",
+      "states": [
+        "default",
+        "validation-error",
+        "upload-failed",
+        "beneficiary-not-ready",
+        "save-conflict",
+        "offline"
+      ],
+      "spec": "create-funding/README.md",
+      "brief": "create-funding/IMAGEGEN.md"
+    },
+    {
+      "id": "create-review",
+      "folder": "create-review",
+      "path": "/create/[kind]/[draftId]/review",
+      "group": "Publishing",
+      "states": [
+        "default",
+        "validation-error",
+        "permission-denied",
+        "submitting",
+        "error",
+        "offline"
+      ],
+      "spec": "create-review/README.md",
+      "brief": "create-review/IMAGEGEN.md"
+    },
+    {
+      "id": "create-status",
+      "folder": "create-status",
+      "path": "/create/[kind]/[draftId]/status",
+      "group": "Publishing",
+      "states": [
+        "submitted",
+        "needs-changes",
+        "published",
+        "rejected",
+        "error",
+        "permission-denied"
+      ],
+      "spec": "create-status/README.md",
+      "brief": "create-status/IMAGEGEN.md"
+    },
+    {
+      "id": "workspace",
+      "folder": "workspace",
+      "path": "/workspaces/[workspaceId]",
+      "group": "Workspace",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "workspace/README.md",
+      "brief": "workspace/IMAGEGEN.md"
+    },
+    {
+      "id": "manage-list",
+      "folder": "manage-list",
+      "path": "/workspaces/[workspaceId]/fundraisers",
+      "group": "Workspace",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "manage-list/README.md",
+      "brief": "manage-list/IMAGEGEN.md"
+    },
+    {
+      "id": "manage-fundraiser",
+      "folder": "manage-fundraiser",
+      "path": "/workspaces/[workspaceId]/fundraisers/[fundraiserId]",
+      "group": "Workspace",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "manage-fundraiser/README.md",
+      "brief": "manage-fundraiser/IMAGEGEN.md"
+    },
+    {
+      "id": "update-editor",
+      "folder": "update-editor",
+      "path": "/workspaces/[workspaceId]/fundraisers/[fundraiserId]/updates/new",
+      "group": "Workspace",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "update-editor/README.md",
+      "brief": "update-editor/IMAGEGEN.md"
+    },
+    {
+      "id": "payouts",
+      "folder": "payouts",
+      "path": "/workspaces/[workspaceId]/payouts",
+      "group": "Workspace",
+      "states": [
+        "not-ready",
+        "pending-verification",
+        "ready",
+        "held",
+        "failed",
+        "permission-denied",
+        "offline"
+      ],
+      "spec": "payouts/README.md",
+      "brief": "payouts/IMAGEGEN.md"
+    },
+    {
+      "id": "members",
+      "folder": "members",
+      "path": "/workspaces/[workspaceId]/members",
+      "group": "Workspace",
+      "states": [
+        "default",
+        "pending-invite",
+        "expired",
+        "last-owner-blocked",
+        "permission-denied",
+        "error"
+      ],
+      "spec": "members/README.md",
+      "brief": "members/IMAGEGEN.md"
+    },
+    {
+      "id": "verification",
+      "folder": "verification",
+      "path": "/workspaces/[workspaceId]/verification",
+      "group": "Workspace",
+      "states": [
+        "not-started",
+        "submitted",
+        "reviewing",
+        "approved",
+        "needs-changes",
+        "rejected",
+        "expired",
+        "permission-denied"
+      ],
+      "spec": "verification/README.md",
+      "brief": "verification/IMAGEGEN.md"
+    },
+    {
+      "id": "workspace-settings",
+      "folder": "workspace-settings",
+      "path": "/workspaces/[workspaceId]/settings",
+      "group": "Workspace",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "workspace-settings/README.md",
+      "brief": "workspace-settings/IMAGEGEN.md"
+    },
+    {
+      "id": "report",
+      "folder": "report",
+      "path": "/report?subject=[type:id]",
+      "group": "Review and help",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "report/README.md",
+      "brief": "report/IMAGEGEN.md"
+    },
+    {
+      "id": "review-queue",
+      "folder": "review-queue",
+      "path": "/admin/reviews",
+      "group": "Review and help",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "permission-denied"
+      ],
+      "spec": "review-queue/README.md",
+      "brief": "review-queue/IMAGEGEN.md"
+    },
+    {
+      "id": "review-detail",
+      "folder": "review-detail",
+      "path": "/admin/reviews/[reviewId]",
+      "group": "Review and help",
+      "states": [
+        "default",
+        "locked",
+        "already-reviewed",
+        "permission-denied",
+        "error"
+      ],
+      "spec": "review-detail/README.md",
+      "brief": "review-detail/IMAGEGEN.md"
+    },
+    {
+      "id": "admin-reports",
+      "folder": "admin-reports",
+      "path": "/admin/reports",
+      "group": "Review and help",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "permission-denied"
+      ],
+      "spec": "admin-reports/README.md",
+      "brief": "admin-reports/IMAGEGEN.md"
+    },
+    {
+      "id": "support",
+      "folder": "support",
+      "path": "/help",
+      "group": "Review and help",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "support/README.md",
+      "brief": "support/IMAGEGEN.md"
+    },
+    {
+      "id": "terms",
+      "folder": "terms",
+      "path": "/legal/terms",
+      "group": "Review and help",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "terms/README.md",
+      "brief": "terms/IMAGEGEN.md"
+    },
+    {
+      "id": "privacy",
+      "folder": "privacy",
+      "path": "/legal/privacy",
+      "group": "Review and help",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "privacy/README.md",
+      "brief": "privacy/IMAGEGEN.md"
+    },
+    {
+      "id": "donation-policy",
+      "folder": "donation-policy",
+      "path": "/legal/donations",
+      "group": "Review and help",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "donation-policy/README.md",
+      "brief": "donation-policy/IMAGEGEN.md"
+    },
+    {
+      "id": "not-found",
+      "folder": "not-found",
+      "path": "not-found.tsx",
+      "group": "Review and help",
+      "states": [
+        "not-found"
+      ],
+      "spec": "not-found/README.md",
+      "brief": "not-found/IMAGEGEN.md"
+    },
+    {
+      "id": "filters",
+      "folder": "filters",
+      "path": "overlay: filters",
+      "group": "Overlays",
+      "states": [
+        "default",
+        "loading",
+        "empty",
+        "error",
+        "offline",
+        "permission-denied"
+      ],
+      "spec": "filters/README.md",
+      "brief": "filters/IMAGEGEN.md"
+    },
+    {
+      "id": "location",
+      "folder": "location",
+      "path": "overlay: location",
+      "group": "Overlays",
+      "states": [
+        "default",
+        "searching",
+        "empty",
+        "location-denied",
+        "offline"
+      ],
+      "spec": "location/README.md",
+      "brief": "location/IMAGEGEN.md"
+    },
+    {
+      "id": "share",
+      "folder": "share",
+      "path": "overlay: share",
+      "group": "Overlays",
+      "states": [
+        "default",
+        "copied",
+        "copy-failed"
+      ],
+      "spec": "share/README.md",
+      "brief": "share/IMAGEGEN.md"
+    }
+  ]
+}

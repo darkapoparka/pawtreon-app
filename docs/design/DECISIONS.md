@@ -25,3 +25,11 @@ It does not establish real supporter counts, beneficiary eligibility, veterinary
 ## Review order
 
 Review flows and real-size wireframes before adding polished photos. Review the home, one case, campaign detail, donation and publish journey as a coherent set. Then extend the same component language to account and organization management. Image-generated boards remain visual review assets until matched to the route catalogue and explicitly accepted. Do not label this design perfect or pixel-verified from an image alone.
+
+## Individual-screen review decision, 2026-09-09
+
+The owner preferred the earlier homepage quality over the later multi-screen boards and requested a folder per screen. Preserve that earlier pair as a reference, not a claim of final acceptance. Home uses the left browsing composition; campaign detail uses the right immersive composition.
+
+Use the [individual screen catalogue](screens/README.md) and [screen workflow](SCREEN-WORKFLOW.md). First refine home, case detail and campaign detail, then extend their accepted components to other routes. Generate one screen and one state per image, not another whole-app collage.
+
+[Reference-app research](REFERENCE-APPS.md) recommends Airbnb 2026 discovery as an external visual benchmark, GoFundMe for fundraising journeys, ShareTheMeal for focused giving and Patreon only as a secondary profile/update reference. These are recommendations, not owner approval of a new clone or permission to import unrelated features. The existing framework and product scope are unchanged.
