@@ -25,3 +25,6 @@ const contracts = data.routes.map(r => `## ${r.id} — ${r.title}\n\nPath: \`${r
 const document = `# Route and screen catalogue\n\nGenerated from \`routes.json\` by \`node scripts/generate-design.mjs\`. ${data.routes.length} screen contracts, including overlays and the not-found boundary. These are not all implemented production URLs. Product paths omit the /bg or /en prefix. Auth callbacks and payment webhooks are service endpoints, not visual pages.\n\n| Screen | Planned path | Title | Access |\n| --- | --- | --- | --- |\n${rows}\n\n# Per-screen contracts\n\n${contracts}`;
 await writeFile(resolve(root, 'docs/design/ROUTES.md'), document.replaceAll('\\n','\n'));
 console.log(`Validated ${data.routes.length} screen contracts and all destinations. Generated standalone wireframes and ROUTES.md.`);
+
+await mkdir(resolve(root, 'public/design'), { recursive: true });
+await writeFile(resolve(root, 'public/design/wireframes.html'), html);

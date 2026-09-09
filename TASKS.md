@@ -14,9 +14,9 @@ Checkboxes describe evidence, not promises of production completion.
 - [x] Write eight coordinated visual board briefs.
 - [ ] Generate and import image boards; verify actual files and coverage.
 - [ ] Obtain owner acceptance of the core visual system.
-- [ ] Initialize using official create-next-app and shadcn CLIs.
-- [ ] Install frontend dependencies and expose the noindex /design workbench.
-- [ ] Run lint, typecheck, build, browser and accessibility checks; record outcomes.
+- [x] Initialize using official create-next-app and shadcn CLIs.
+- [x] Install frontend dependencies and expose the noindex /design workbench.
+- [x] Run lint, typecheck, build, browser and accessibility checks; record outcomes.
 
 ## P1 — Accepted frontend
 
@@ -27,3 +27,17 @@ Checkboxes describe evidence, not promises of production completion.
 - [ ] Implement personal activity and role-aware organization workspace screens.
 - [ ] Verify loading, empty, error, offline, denied, paused and resolved states.
 - [ ] Match accepted designs at actual mobile, tablet and desktop viewport sizes.
+
+## P2 — Real services and launch gates
+
+- [ ] Implement authentication, workspace memberships and server permission checks.
+- [ ] Implement database migrations, persistent drafts and protected media storage.
+- [ ] Implement moderation queues, reports, review decisions and audit history.
+- [ ] Obtain written payment-provider approval for the actual Bulgarian business model.
+- [ ] Implement approved checkout, payment events, receipts, refunds and reconciliation.
+- [ ] Review privacy, legal, donation and beneficiary policies before launch.
+- [ ] Use the owner's real photographs, budget and shelter-placement plan for the pilot.
+- [ ] Verify all acceptance journeys with actual test services on the final candidate.
+- [ ] Obtain explicit production deployment approval.
+
+The wireframes do not establish live services, payment eligibility or owner design acceptance.

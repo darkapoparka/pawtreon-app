@@ -1,0 +1,1302 @@
+{
+  "generatedAt": "2026-09-09T19:05:31.554Z",
+  "checked": 212,
+  "failures": [],
+  "pageErrors": [],
+  "accessibility": [
+    {
+      "id": "home",
+      "violations": []
+    },
+    {
+      "id": "campaign",
+      "violations": []
+    },
+    {
+      "id": "create-basics",
+      "violations": []
+    },
+    {
+      "id": "donate",
+      "violations": []
+    },
+    {
+      "id": "account",
+      "violations": []
+    }
+  ],
+  "results": [
+    {
+      "id": "home",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaigns",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "search",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "map",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "case",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaign",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "case-updates",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaign-updates",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "person",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "organization",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "offer-help",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "help-sent",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donate",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donation-status",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "receipt",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "sign-in",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "sign-up",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "check-email",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "auth-error",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "onboarding",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "organization-new",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "invitation",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "account",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "settings",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "saved",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donations",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "notifications",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-basics",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-story",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-funding",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-review",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-status",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "workspace",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "manage-list",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "manage-fundraiser",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "update-editor",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "payouts",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "members",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "verification",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "workspace-settings",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "report",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "review-queue",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "review-detail",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "admin-reports",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "support",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "terms",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "privacy",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donation-policy",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "not-found",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "filters",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "location",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "share",
+      "width": 320,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "home",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaigns",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "search",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "map",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "case",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaign",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "case-updates",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaign-updates",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "person",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "organization",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "offer-help",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "help-sent",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donate",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donation-status",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "receipt",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "sign-in",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "sign-up",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "check-email",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "auth-error",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "onboarding",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "organization-new",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "invitation",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "account",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "settings",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "saved",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donations",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "notifications",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-basics",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-story",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-funding",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-review",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-status",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "workspace",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "manage-list",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "manage-fundraiser",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "update-editor",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "payouts",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "members",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "verification",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "workspace-settings",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "report",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "review-queue",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "review-detail",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "admin-reports",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "support",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "terms",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "privacy",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donation-policy",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "not-found",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "filters",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "location",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "share",
+      "width": 360,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "home",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaigns",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "search",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "map",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "case",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaign",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "case-updates",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaign-updates",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "person",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "organization",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "offer-help",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "help-sent",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donate",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donation-status",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "receipt",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "sign-in",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "sign-up",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "check-email",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "auth-error",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "onboarding",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "organization-new",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "invitation",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "account",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "settings",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "saved",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donations",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "notifications",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-basics",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-story",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-funding",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-review",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-status",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "workspace",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "manage-list",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "manage-fundraiser",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "update-editor",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "payouts",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "members",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "verification",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "workspace-settings",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "report",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "review-queue",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "review-detail",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "admin-reports",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "support",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "terms",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "privacy",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donation-policy",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "not-found",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "filters",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "location",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "share",
+      "width": 390,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "home",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaigns",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "search",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "map",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "case",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaign",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "case-updates",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "campaign-updates",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "person",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "organization",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "offer-help",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "help-sent",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donate",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donation-status",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "receipt",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "sign-in",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "sign-up",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "check-email",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "auth-error",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "onboarding",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "organization-new",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "invitation",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "account",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "settings",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "saved",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donations",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "notifications",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-basics",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-story",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-funding",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-review",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "create-status",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "workspace",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "manage-list",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "manage-fundraiser",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "update-editor",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "payouts",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "members",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "verification",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "workspace-settings",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "report",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "review-queue",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "review-detail",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "admin-reports",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "support",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "terms",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "privacy",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "donation-policy",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "not-found",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "filters",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "location",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    },
+    {
+      "id": "share",
+      "width": 430,
+      "overflow": false,
+      "rendered": true
+    }
+  ]
+}
