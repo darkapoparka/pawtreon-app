@@ -18,6 +18,18 @@ Use the left composition's useful browsing structure for `/`. Use the right comp
 - On details, donation, creation and moderation screens, replace global navigation with the appropriate focused actions. Never show two fixed bottom bars.
 - Map discovery is optional. A map below campaign details appears only when it contributes to that initiative and uses approved coarse areas.
 
+## Homepage refinement, 2026-09-13
+
+The current reviewed home reference is `screens/homepage/concepts/mobile-home-reference-2026-09-13.svg`, with detailed notes in `screens/homepage/REVIEW.md`. Where this section conflicts with the older exploratory homepage bullets above, use the 2026-09-13 reference for the home screen while keeping the older notes as history.
+
+- Header: location at upper left, compact Pawtreon paw-heart mark centered, account/avatar at upper right.
+- Show the inline search field in the first viewport; do not duplicate it with another search icon. Quick filter pills sit directly below search.
+- Do not show a generic home statistics strip. Result counts belong to search/filter results when useful.
+- Keep the compact photo-led campaign banner followed by `Cases near you` and animal-led case cards.
+- Map is now a first-class alternate discovery surface sharing the same canonical filter/location state as the list.
+- The current visual reference tests Cases / Map / Create / Messages / Campaigns in the dock. Map is accepted discovery direction. Messages remains exploratory product scope, not automatic v1 acceptance; private messaging still requires an explicit coordination/privacy/abuse-control decision.
+- The large header should not remain fully sticky. A compact scroll-up/search treatment may be explored without duplicating controls.
+
 ## What the concept does not decide
 
 It does not establish real supporter counts, beneficiary eligibility, veterinary evidence, shelter permissions, dates, campaign budgets, privacy consent, or payment-provider approval. Do not import mockup numbers as live seeded fundraising claims.
