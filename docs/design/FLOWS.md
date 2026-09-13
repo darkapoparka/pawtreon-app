@@ -66,6 +66,12 @@ Protect reporter identity. Content review, legal-entity verification and payment
 
 Keyboard focus enters and exits sheets predictably; Escape and an explicit close button work. Mobile forms remain usable with the software keyboard. Back navigation restores scroll and values. Pending/loading states reserve layout, announce relevant changes and cannot resemble success. Retry preserves context. Offline writes do not masquerade as completed server actions. Long names and Bulgarian copy are tested at real viewport widths and 200% zoom.
 
+## F12 — Start from an external source
+
+`external URL -> source preview -> dedupe/canonical-match check -> create draft -> organizer/evidence review -> case/campaign`.
+
+Pasting a supported external URL may prefill source title/text/media only where permitted. Keep source attribution and the original URL, do not import engagement counts, and show what was imported versus organizer-authored. If a canonical case already exists, route to it instead of creating a duplicate. Source import does not establish authorization, verification or payment readiness. The user must select the acting identity and complete the normal create/review steps. Sharing the resulting canonical Pawtreon URL out to third-party networks must not create another fundraiser.
+
 ## External/service routes, not visual pages
 
 Auth callback, signed upload URL creation, donation session creation, provider webhooks, health/readiness and sitemap/robots are server endpoints. They need technical contracts/tests, not separate invented mobile mockups. Map tiles and checkout are provider surfaces and must not be recreated as fake payment functionality.

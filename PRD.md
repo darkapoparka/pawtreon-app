@@ -16,6 +16,14 @@ A **campaign** is a coordinated initiative with a budget and outcome, potentiall
 
 A shared **fundraiser** holds financial settings for either a case or a campaign. A campaign does not automatically become a registered charity, and a store/clinic label is not verification.
 
+## External source links, reposting and canonical cases
+
+Pawtreon does not recreate X/Facebook-style reposts inside a social feed. A user may start a Pawtreon draft from an external post or URL, but the result is a normal canonical **case** or **campaign** with Pawtreon's own structured fields, responsible organizer, status and help request. The external item is source material, not a new content type and not proof that the poster authorized fundraising.
+
+A source-assisted draft must preserve source attribution and the original URL where appropriate, detect obvious duplicate URLs/cases, and never import likes, repost counts, follower counts or other engagement metrics as trust signals. Before money can be enabled, the responsible organizer/beneficiary, permissions, evidence and payment readiness must be established through the same workflow as any other fundraiser.
+
+Sharing works outward too: users share the canonical Pawtreon case/campaign URL to X, Facebook, messaging apps or elsewhere. Sharing spreads one case; it must not create duplicate fundraiser ledgers or duplicate donation totals.
+
 ## Identities and permissions
 
 A human signs in once and owns a personal profile. They can also create or join organization workspaces typed `clinic`, `store`, or `organization`. Account switching changes the active acting identity; it must not create four incompatible login systems.
@@ -29,7 +37,7 @@ Visitors browse and share without logging in. Saving, following, publishing, app
 1. Discover cases/campaigns by city, species, need, urgency and organizer type; open a list or privacy-preserving map. Search and filter state survives navigation/back.
 2. Open a case/campaign with clear story, responsible organizer, approximate area, budget, evidence summary, updates and an honest funding status. Distinguish identity verification, evidence review and payout readiness.
 3. Use a transparent donation journey: amount, recipient, total/fees, optional display-name privacy, provider-hosted payment, server-confirmed result and receipt. Gate this entire capability on processor eligibility.
-4. Publish via a resumable wizard: identity, subject, location, need, story, photos, budget/evidence, review and submit. Moderation and payment onboarding are explicit states, not invisible reasons why a button fails.
+4. Publish via a resumable wizard: identity, subject, location, need, story, photos, budget/evidence, review and submit. A source URL may prefill a draft, but never bypasses required ownership, evidence, moderation or payout checks. Moderation and payment onboarding are explicit states, not invisible reasons why a button fails.
 5. Maintain personal and organization profiles, saved items, donations, follows/notifications and organizer workspaces. Invite staff and scope their access.
 6. Post progress updates, record case resolution, request non-monetary help and report suspicious content. Reviewers have queues, evidence access controls, reasons and audit history.
 
