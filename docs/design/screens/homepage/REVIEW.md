@@ -6,7 +6,7 @@ Status: active reference direction, not pixel-final implementation approval.
 
 The owner selected the latest Pawtreon homepage iteration as the visual reference for the mobile discovery experience. Preserve the overall quality and hierarchy rather than independently redesigning the route.
 
-Reference image: `concepts/mobile-home-reference-2026-09-13.jpg`.
+Reference image: `concepts/mobile-home-reference-2026-09-13.svg`.
 
 ### Keep
 
